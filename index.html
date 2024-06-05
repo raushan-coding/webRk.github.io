@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neon text</title>
+</head>
+<body>
+	<style>
+		body {
+  margin: 0;
+  padding: 0;
+/*   background: #262626; */
+  background: linear-gradient(to right, #262626, #121212);
+}
+text {
+	
+	margin-left: 50%;
+  fill: #000;
+  stroke: #00ffdd;
+  text-shadow: 0 0 2px #00ffdd;
+  font-size: 150px;
+  stroke-width: 3px;
+  stroke-dasharray: 0, 500;
+  stroke-dashoffset: 200;
+  font-family: "Pacifico", cursive;
+  transition: all 2s cubic-bezier(0, 1, 1, 0);
+}
+
+text:hover {
+  stroke-dasharray: 1100, 300;
+  stroke-dashoffset: 0;
+  stroke: yellow;
+  fill: transparent;
+  text-shadow: 0 0 60px yellow;
+}
+	</style>
+<svg width="100vw" height="80vh">
+
+  <text x="150" y="60%">
+    RAUSHAN  KUMAR
+  </text>
+
+</svg>
+</body>
+</html>
